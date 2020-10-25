@@ -1,0 +1,179 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000058b01958, pid=7236, tid=1316
+#
+# JRE version:  (10.0.2+13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13, mixed mode, aot, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x1c1958]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: E:\Desenvolvimento\Componentes_final\Componentes\dist\Componentes.jar
+
+Host: Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz, 4 cores, 11G,  Windows 10 , 64 bit Build 18362 (10.0.18362.900)
+Time: Wed Aug 05 14:45:28 2020 Hora oficial do Brasil elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001daae74d800):  JavaThread "Unknown thread" [_thread_in_vm, id=1316, stack(0x000000b8d3900000,0x000000b8d3a00000)]
+
+Stack: [0x000000b8d3900000,0x000000b8d3a00000],  sp=0x000000b8d39ff860,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1c1958]
+V  [jvm.dll+0x1bfe43]
+V  [jvm.dll+0x3519cb]
+V  [jvm.dll+0x6856a2]
+V  [jvm.dll+0x3ba0c3]
+V  [jvm.dll+0x3bc261]
+C  [javaw.exe+0x3541]
+C  [javaw.exe+0xe1cf]
+C  [javaw.exe+0xe376]
+C  [KERNEL32.DLL+0x17bd4]
+C  [ntdll.dll+0x6ce51]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x0000bdc804872dcd, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x000000b8d39ff860, RBP=0x0000000000000000, RSI=0x000001daae74d800, RDI=0x0000000000000000
+R8 =0x0000000000000006, R9 =0x0000000000000006, R10=0x0000000000000006, R11=0x000000b8d39ff0d0
+R12=0x0000000000000000, R13=0x0000000058e92ab0, R14=0x000000b8d39ffcb8, R15=0x000001daac654cb8
+RIP=0x0000000058b01958, EFLAGS=0x0000000000010256
+
+Top of Stack: (sp=0x000000b8d39ff860)
+0x000000b8d39ff860:   00000000590e1658 0000000058eb5c2d
+0x000000b8d39ff870:   00000000591493c0 00000000590e1658
+0x000000b8d39ff880:   0000000000000040 000000b8d39ff8e0
+0x000000b8d39ff890:   000001daae74c5a0 0000000058eb6075
+0x000000b8d39ff8a0:   000001daae74d800 0000000000000000
+0x000000b8d39ff8b0:   0000000000000000 0000000058eb5957
+0x000000b8d39ff8c0:   0000000000000000 0000000058f06f79
+0x000000b8d39ff8d0:   000001daae74c5a0 0000000000000000
+0x000000b8d39ff8e0:   0000000000000000 0000000000000000
+0x000000b8d39ff8f0:   0000000000000004 0000000058f075d8
+0x000000b8d39ff900:   000001daae74c5a0 0000bdc804872dcd
+0x000000b8d39ff910:   0000000000000004 0000000000000000
+0x000000b8d39ff920:   0000000058e92ab0 000001daae74d800
+0x000000b8d39ff930:   000000b8d39ff970 0000000058affe43
+0x000000b8d39ff940:   0000000000000000 000000b8d39ff970
+0x000000b8d39ff950:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x0000000058b01958)
+0x0000000058b01938:   c0 00 00 00 48 8b 05 6d 1d 7a 00 48 33 c4 48 89
+0x0000000058b01948:   84 24 a8 00 00 00 48 8b e9 48 83 ca ff 48 ff c2
+0x0000000058b01958:   80 3c 0a 00 75 f7 33 f6 45 33 ed c6 44 24 30 01
+0x0000000058b01968:   85 d2 0f 8e 54 02 00 00 8b 0d e6 6d 81 00 65 48 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001daac658c30, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+[error occurred during error reporting (printing all threads), id 0xc0000005]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+[error occurred during error reporting (printing compressed oops mode), id 0xc0000005]
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff76db10000 - 0x00007ff76db4e000 	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe
+0x00007ffd55700000 - 0x00007ffd558f0000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd53850000 - 0x00007ffd53902000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd52980000 - 0x00007ffd52c24000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffd547e0000 - 0x00007ffd54883000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd555c0000 - 0x00007ffd5565e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd53c60000 - 0x00007ffd53cf7000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd53d00000 - 0x00007ffd53e20000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd53ac0000 - 0x00007ffd53c54000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd52c80000 - 0x00007ffd52ca1000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd54370000 - 0x00007ffd54396000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd52d60000 - 0x00007ffd52ef5000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd52f00000 - 0x00007ffd52f9e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffd52690000 - 0x00007ffd5278a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd43ab0000 - 0x00007ffd43d34000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.900_none_e6beb9d913147d17\COMCTL32.dll
+0x00007ffd499b0000 - 0x00007ffd499ba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd54420000 - 0x00007ffd54755000 	C:\WINDOWS\System32\combase.dll
+0x00007ffd52900000 - 0x00007ffd52980000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffd53820000 - 0x00007ffd5384e000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffd42580000 - 0x00007ffd4266f000 	C:\Program Files\Java\jre-10.0.2\bin\msvcr120.dll
+0x00007ffd4d3a0000 - 0x00007ffd4d446000 	C:\Program Files\Java\jre-10.0.2\bin\msvcp120.dll
+0x0000000058940000 - 0x00000000593b0000 	C:\Program Files\Java\jre-10.0.2\bin\server\jvm.dll
+0x00007ffd54350000 - 0x00007ffd54358000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffd4eee0000 - 0x00007ffd4eee9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd48e80000 - 0x00007ffd48ea4000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd54de0000 - 0x00007ffd54e4f000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffd48e50000 - 0x00007ffd48e7d000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ffd52c30000 - 0x00007ffd52c7a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffd4d7c0000 - 0x00007ffd4d7cf000 	C:\Program Files\Java\jre-10.0.2\bin\verify.dll
+0x00007ffd440b0000 - 0x00007ffd442a4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffd44080000 - 0x00007ffd440aa000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffd4b640000 - 0x00007ffd4b667000 	C:\Program Files\Java\jre-10.0.2\bin\java.dll
+0x00007ffd4d5f0000 - 0x00007ffd4d606000 	C:\Program Files\Java\jre-10.0.2\bin\zip.dll
+0x00007ffd4be80000 - 0x00007ffd4be8a000 	C:\Program Files\Java\jre-10.0.2\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jre-10.0.2\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.900_none_e6beb9d913147d17;C:\Program Files\Java\jre-10.0.2\bin\server
+
+VM Arguments:
+java_command: E:\Desenvolvimento\Componentes_final\Componentes\dist\Componentes.jar
+java_class_path (initial): E:\Desenvolvimento\Componentes_final\Componentes\dist\Componentes.jar
+Launcher Type: SUN_STANDARD
+
+Logging:
+Log output configuration:
+#0: stdout all=warning uptime,level,tags
+#1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_181
+PATH=C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\Marco Junior\AppData\Local\Microsoft\WindowsApps;C:\Users\Marco Junior\AppData\Local\atom\bin;%LiveConsolePath%;C:\Users\Marco Junior\AppData\Roaming\npm;C:\Users\Marco Junior\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.4\bin;;C:\maven\apache-maven-3.6.3\bin;
+USERNAME=Marco Junior
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 18362 (10.0.18362.900)
+
+CPU:total 4 (initial active 4) 
+
+Memory: 4k page, physical 12476780k(9721360k free), swap 14377324k(11552156k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13) for windows-amd64 JRE (10.0.2+13), built on Jun 28 2018 01:57:56 by "mach5one" with MS VC++ 12.0 (VS2013)
+
+END.
